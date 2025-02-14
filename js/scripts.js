@@ -11,6 +11,7 @@ function changeImage() {
 
 // Delay start of image transitions to after title fade-in
 setTimeout(() => {
+    images[0].style.opacity = '1'; // Show the first image
     setInterval(changeImage, 3000); // Change the image every 3 seconds
 }, 3000); // 3-second delay before starting image transitions
 
