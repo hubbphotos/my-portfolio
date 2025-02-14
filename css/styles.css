@@ -2,23 +2,37 @@ body, html {
     margin: 0;
     padding: 0;
     font-family: Arial, sans-serif;
+    background-color: #ECFEFB;
+    color: #4A4A4A
 }
 
 header {
     position: fixed;
     width: 100%;
     top: 0;
-    background-color: rgba(0, 0, 0, 0.7);
+    background-color: rgba(255, 193, 204, 0.7); /* #ffc1cc with 70% opacity */
     padding: 1rem;
     text-align: center;
     z-index: 3;
 }
+
+
+nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 
 nav a {
     margin: 0 15px;
     color: white;
     text-decoration: none;
     font-size: 1.2rem;
+}
+
+nav a:hover {
+    color: #4A4A4A; /* Update hover color */
 }
 
 .hero {
@@ -61,11 +75,11 @@ nav a {
 
 .hero h1:hover {
     font-weight: bolder;
-    color: #fc83fb; /* Change color on hover */
+    color: #ffc1cc; /* Change color on hover */
 }
 
 .hero h1:active {
-    color: #fc83fb; /* Change color when clicked */
+    color: #ffc1cc; /* Change color when clicked */
     text-decoration: none; /* Ensure no underline */
 }
 
@@ -165,14 +179,24 @@ nav a {
 
 .about-paragraph a {
     color: #333; /* Default color */
+    font-size: 1.5rem;
     font-weight: bold; /* Make "get in touch" bold */
     text-decoration: none; /* Remove underline */
     transition: color 0.3s ease; /* Smooth color transition */
 }
 
 .about-paragraph a:hover {
-    color: #fc83fb; /* Updated pink color on hover */
+    color: #ffc1cc; /* Updated pink color on hover */
 }
+.about-image {
+    width: 150px; /* Adjust width as needed */
+    height: 150px; /* Adjust height as needed to make it a circle */
+    margin-top: 1rem; /* Space between paragraph and image */
+    border-radius: 50%; /* Make it circular */
+    object-fit: cover; /* Ensure the image covers the entire circle */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: shadow for a polished look */
+}
+
 
 /* Updated CSS */
 .portfolio-grid {
@@ -213,8 +237,8 @@ nav a {
     bottom: 0;
     left: 0;
     width: 100%;
-    background-color: rgba(252, 131, 251, 0.2); /* Light opacity overlay with pink color */
-    color: white;
+    background-color: rgba(255, 193, 204, 0.8); /* Light opacity overlay with pink color */
+    color: #4A4A4A;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -317,7 +341,7 @@ nav a {
 }
 
 .contact-form button:hover {
-    background-color: #555;
+    background-color: #ffc1cc;
 }
 
 .contact-links {
@@ -334,7 +358,7 @@ nav a {
 }
 
 .contact-link:hover {
-    color: #fc83fb; /* Updated pink color on hover */
+    color: #ffc1cc; /* Updated pink color on hover */
 }
 
 /* Media queries for responsive design */
