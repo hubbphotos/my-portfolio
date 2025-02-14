@@ -86,6 +86,12 @@ nav a:hover {
         margin: 0 10px; /* Reduce margin between links */
     }
 }
+/* Media query for portrait orientation on phones */
+@media (orientation: portrait) and (max-width: 600px) {
+    .portfolio-grid {
+        grid-template-columns: repeat(2, 1fr); /* 2 images per row in portrait mode on phones */
+    }
+}
 
 .hero h1 {
     font-size: 5rem;
