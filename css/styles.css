@@ -406,7 +406,7 @@ nav a {
         background-position: top center; /* Adjust for landscape orientation */
     }
     .image7 {
-        background-position: top center; /* Adjust for landscape orientation */
+        background-position: center 40%; /* Adjust for landscape orientation */
     }
 }
 
@@ -420,7 +420,20 @@ nav a {
     .image3 {
         background-position: center 28%; /* Adjust for large screens */
     }
+    .image4 {
+        background-position: center 30%; /* Adjust for tablets */
+    }
+    .image5 {
+        background-position: center 40%; /* Adjust for tablets */
+    }
+    .image6 {
+        background-position: center 20%; /* Adjust for tablets */
+    }
+    .image7 {
+        background-position: center 40%; /* Adjust for tablets */
+    }
 }
+
 
 @media (max-width: 1200px) {
     .contact-form input, .contact-form textarea {
