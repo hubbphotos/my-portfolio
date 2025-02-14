@@ -9,8 +9,10 @@ function changeImage() {
     images[currentIndex].style.opacity = '1'; // Show the next image
 }
 
-// Change the image every 4 seconds
-setInterval(changeImage, 4000);
+// Delay start of image transitions to after title fade-in
+setTimeout(() => {
+    setInterval(changeImage, 3000); // Change the image every 3 seconds
+}, 3000); // 3-second delay before starting image transitions
 
 // Lightbox functionality
 var slideIndex = 0;
@@ -106,5 +108,6 @@ const preloadImages = () => {
 };
 
 preloadImages();
+
 
 

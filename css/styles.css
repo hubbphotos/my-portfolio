@@ -3,7 +3,8 @@ body, html {
     padding: 0;
     font-family: Arial, sans-serif;
     background-color:#f8f7f7;
-    color: #4A4A4A
+    color: #4A4A4A;
+    overflow: hidden;
 }
 
 header {
@@ -47,6 +48,22 @@ nav a:hover {
     justify-content: center;
     color: white;
     overflow: hidden;
+}
+.hero h1 {
+    font-size: 5rem;
+    text-shadow: 4px 4px 8px rgba(0, 0, 0, 0.7); /* More prominent shadow */
+    z-index: 2;
+    text-align: center;
+    transition: font-weight 0.3s ease, color 0.3s ease;
+    opacity: 0; /* Start hidden */
+    animation: fadeInTitle 2s forwards; /* Fade in title */
+    animation-delay: 1s; /* Delay before title fades in */
+}
+
+@keyframes fadeInTitle {
+    to {
+        opacity: 1;
+    }
 }
 
 .hero-image1, .hero-image3, .hero-image4 {
