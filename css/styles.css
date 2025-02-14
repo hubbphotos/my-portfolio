@@ -4,7 +4,8 @@ body, html {
     font-family: Arial, sans-serif;
     background-color:#f8f7f7;
     color: #4A4A4A;
-    overflow: hidden;
+    overflow-x: hidden;
+    overflow-y: auto;
 }
 
 header {
