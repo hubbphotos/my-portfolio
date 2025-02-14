@@ -56,13 +56,21 @@ nav a:hover {
     /* Additional styling for hero images */
 }
 
-/* Add this media query for landscape orientation on phones and tablets */
+//* Add this media query for landscape orientation on phones and tablets */
 @media (orientation: landscape) and (max-width: 1024px) {
-    .hero-image1,
-    .hero-image3,
+    .hero-image1 {
+        position: relative;
+        top: -20%; /* Push image1 upwards by 20% */
+    }
+    
+    .hero-image3 {
+        position: relative;
+        top: -20%; /* Push image3 upwards by 20% */
+    }
+    
     .hero-image4 {
         position: relative;
-        top: -10%; /* Push the images upwards by 10% */
+        top: -10%; /* Push image4 upwards by 10% */
     }
     .portfolio-grid {
         grid-template-columns: repeat(2, 1fr); /* 2 images per row */
