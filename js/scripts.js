@@ -91,3 +91,15 @@ document.addEventListener('contextmenu', function(event) {
     event.preventDefault();
 });
 
+
+// Preload images
+const preloadImages = () => {
+    images.forEach(img => {
+        const src = img.style.backgroundImage.replace(/url\((['"])?(.*?)\1\)/gi, '$2');
+        const image = new Image();
+        image.src = src;
+    });
+};
+
+preloadImages();
+

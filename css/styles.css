@@ -77,8 +77,15 @@ nav a {
     height: 100%;
     background-size: cover;
     background-position: center top; /* Default position */
-    transition: opacity 2s ease-in-out;
+    opacity: 0;
+    transition: opacity 1s ease-in-out; /* Adjust transition time if needed */
 }
+
+.image:first-child {
+    opacity: 1; /* Ensure the first image is visible initially */
+}
+
+
 
 .image1 {
     background-image: url('../images/djcloseup8.jpg'); /* New first image */
