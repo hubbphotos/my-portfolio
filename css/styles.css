@@ -56,7 +56,7 @@ nav a:hover {
     /* Additional styling for hero images */
 }
 
-//* Add this media query for landscape orientation on phones and tablets */
+/* Add this media query for landscape orientation on phones and tablets */
 @media (orientation: landscape) and (max-width: 1024px) {
     .hero-image1 {
         position: relative;
@@ -180,6 +180,14 @@ nav a:hover {
 
 .image7 {
     background-image: url('../images/MK3.jpg');
+    opacity: 0;
+}
+/* Add the preloading styles here */
+.image[data-loaded="true"] {
+    opacity: 1;
+}
+
+.image[data-loaded="false"] {
     opacity: 0;
 }
 

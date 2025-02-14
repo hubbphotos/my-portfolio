@@ -85,21 +85,26 @@ function handleSwipeGesture() {
 lightbox.addEventListener('touchstart', handleTouchStart);
 lightbox.addEventListener('touchend', handleTouchEnd);
 
-
 // Disable right-click
 document.addEventListener('contextmenu', function(event) {
     event.preventDefault();
 });
 
-
-// Preload images
+// Preload images with data attributes for opacity transitions
 const preloadImages = () => {
     images.forEach(img => {
         const src = img.style.backgroundImage.replace(/url\((['"])?(.*?)\1\)/gi, '$2');
         const image = new Image();
         image.src = src;
+        
+        // Add data attributes for opacity transitions
+        image.onload = () => {
+            img.dataset.loaded = "true";
+            img.style.backgroundImage = `url(${src})`;
+        };
     });
 };
 
 preloadImages();
+
 
