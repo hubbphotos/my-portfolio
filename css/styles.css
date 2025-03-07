@@ -215,6 +215,10 @@ nav a:hover {
     background-image: url('../images/MK3.jpg');
     opacity: 0;
 }
+.image8 {
+    background-image: url('../images/TMC17.jpg');
+    opacity: 0;
+}
 /* Add the preloading styles here */
 .image[data-loaded="true"] {
     opacity: 1;
@@ -472,6 +476,9 @@ nav a:hover {
     .image7 {
         background-position: center 40%; /* Adjust for tablets */
     }
+    .image8 {
+        background-position: center 40%; /* Adjust for tablets */
+    }
 }
 
 @media (max-width: 768px) {
@@ -494,6 +501,9 @@ nav a:hover {
         background-position: center bottom; /* Adjust for mobile phones */
     }
     .image7 {
+        background-position: center bottom; /* Adjust for mobile phones */
+    }
+    .image8 {
         background-position: center bottom; /* Adjust for mobile phones */
     }
 }
@@ -520,6 +530,10 @@ nav a:hover {
     .image7 {
         background-position: center 40%; /* Adjust for landscape orientation */
     }
+    .image8 {
+        background-position: center 40%; /* Adjust for landscape orientation */
+    }
+
 }
 
 @media (min-width: 1200px) {
@@ -542,6 +556,9 @@ nav a:hover {
         background-position: center 20%; /* Adjust for tablets */
     }
     .image7 {
+        background-position: center 40%; /* Adjust for tablets */
+    }
+    .image8 {
         background-position: center 40%; /* Adjust for tablets */
     }
 }
